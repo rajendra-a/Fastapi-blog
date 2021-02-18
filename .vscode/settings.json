@@ -1,0 +1,5 @@
+{
+    "python.linting.pylintEnabled": true,
+    "python.linting.enabled": false,
+    "python.pythonPath": "/home/rajendra/anaconda3/envs/faenv/bin/python"
+}

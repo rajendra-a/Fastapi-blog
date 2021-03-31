@@ -26,6 +26,12 @@ SessionLocal = sessionmaker(bind=engine, autocommit=False, autoflush=False)
 # Database Base system which maps with the pydantic schema 
 Base = declarative_base()
 
+def get_db():
+    db = SessionLocal()
+    try:
+        yield db
+    finally:
+        db.close()
 
 
 
